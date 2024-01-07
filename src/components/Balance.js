@@ -19,18 +19,20 @@ const Balance = () => {
       <div className="font-semibold my-1">Today</div>
       <div>
         <p className="text-4xl font-bold">$19,892</p>
-        <p className="text-zinc-500">Account Balance</p>
+        <p className="font-sans font-semibold text-zinc-500">Account Balance</p>
       </div>
       <div className="flex gap-2 py-4 sm:flex-col">
         <div className="w-1/2 sm:w-full">
           <p className="text-xl sm:text-sm font-bold">$4000</p>
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs font-sans font-semibold text-zinc-500">
             Year-to-Date {!isMobile ? "Contributions" : ""}
           </p>
         </div>
         <div className="w-1/2 sm:w-full">
           <p className="text-xl sm:text-sm font-bold">$1892</p>
-          <p className="text-xs text-zinc-500">Total Interest</p>
+          <p className="text-xs font-sans font-semibold text-zinc-500">
+            Total Interest
+          </p>
         </div>
       </div>
       <div className="w-full sm:h-10">

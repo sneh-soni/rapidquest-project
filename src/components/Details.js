@@ -1,14 +1,12 @@
 import React from "react";
 import Goals from "./Goals";
+import Graph from "./Graph";
 
 const Details = () => {
   return (
-    <div className="w-screen  my-4 p-2">
-      <div className="p-2">
-        <div className="text-blue-400">Retirement Income</div>
-        <div className="text-xl font-semibold">Starting Year 2056</div>
-      </div>
+    <div className="w-screen h-screen mt-4 p-2 sm:w-[50%]">
       <Goals />
+      <Graph />
     </div>
   );
 };
