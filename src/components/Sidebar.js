@@ -14,7 +14,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-[5%]">
       {isMobile ? (
         <div className="z-10 flex absolute w-screen h-8 mt-auto bottom-0 items-center p-2 justify-between bg-white">
           <div className="w-[10%] h-8 bg-blue-700 rounded-md flex justify-center items-center">

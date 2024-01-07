@@ -1,12 +1,14 @@
 import React from "react";
 import Goals from "./Goals";
 import Graph from "./Graph";
+import Compare from "./Compare";
 
 const Details = () => {
   return (
-    <div className="w-screen h-screen mt-4 p-2 sm:w-[50%]">
+    <div className="w-screen h-screen mt-4 p-2 sm:w-[50%] sm:mt-0 sm:absolute sm:right-[21%]">
       <Goals />
       <Graph />
+      <Compare />
     </div>
   );
 };
