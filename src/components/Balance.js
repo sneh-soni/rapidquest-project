@@ -15,25 +15,25 @@ const Balance = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-100 rounded-xl h-[45%] p-4">
+    <div className="bg-zinc-100 rounded-xl h-[45%] p-4 sm:pt-2 flex flex-col flex-shrink">
       <div className="font-semibold my-1">Today</div>
-      <div className="my-1">
+      <div>
         <p className="text-4xl font-bold">$19,892</p>
         <p className="text-zinc-500">Account Balance</p>
       </div>
-      <div className="my-1 flex gap-2 py-4 sm:flex-col">
-        <div className="w-1/2 sm:w-full overflow-hidden">
-          <p className="text-xl font-bold">$4000</p>
+      <div className="flex gap-2 py-4 sm:flex-col">
+        <div className="w-1/2 sm:w-full">
+          <p className="text-xl sm:text-sm font-bold">$4000</p>
           <p className="text-xs text-zinc-500">
             Year-to-Date {!isMobile ? "Contributions" : ""}
           </p>
         </div>
         <div className="w-1/2 sm:w-full">
-          <p className="text-xl font-bold">$1892</p>
+          <p className="text-xl sm:text-sm font-bold">$1892</p>
           <p className="text-xs text-zinc-500">Total Interest</p>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full sm:h-10">
         <button className=" text-white font-sans bg-blue-700 w-full rounded-lg p-4 flex justify-center sm:text-xs sm:gap-2 sm:w-3/4">
           I Want to{" "}
           {isMobile ? (

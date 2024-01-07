@@ -1,3 +1,4 @@
+import Details from "./components/Details";
 import Profile from "./components/Profile";
 import Sidebar from "./components/Sidebar";
 
@@ -9,6 +10,7 @@ function App() {
     >
       <Sidebar />
       <Profile />
+      <Details />
     </div>
   );
 }

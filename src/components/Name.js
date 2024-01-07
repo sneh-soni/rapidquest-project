@@ -2,7 +2,7 @@ import React from "react";
 
 const Name = () => {
   return (
-    <div className="w-full h-1/4 flex flex-col justify-center sm:bg-zinc-100 sm:h-1/6">
+    <div className="w-full h-1/5 flex flex-col justify-center sm:bg-zinc-100 sm:h-1/6">
       <div className="flex p-4 gap-4">
         <div className="sm:flex sm:flex-col sm:justify-center">
           <img
