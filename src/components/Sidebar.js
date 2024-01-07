@@ -83,7 +83,7 @@ const Sidebar = () => {
           </div>
         </div>
       ) : (
-        <div className="w-[5%] p-2 h-full flex flex-col">
+        <div className="w-12 z-10 p-2 h-full flex flex-col">
           <div className="h-[20%] flex flex-col gap-2">
             <div className="flex justify-center h-8">
               <svg
