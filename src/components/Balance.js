@@ -15,7 +15,7 @@ const Balance = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-100 rounded-xl h-[45%] p-4 sm:pt-2 flex flex-col flex-shrink">
+    <div className="bg-zinc-100 rounded-xl h-[45%] p-4 sm:pt-2 flex flex-col">
       <div className="font-semibold my-1">Today</div>
       <div>
         <p className="text-4xl font-bold">$19,892</p>
