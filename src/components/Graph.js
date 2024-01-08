@@ -1,4 +1,5 @@
 import React from "react";
+import Bars from "./Bars";
 
 const Graph = () => {
   return (
@@ -6,7 +7,9 @@ const Graph = () => {
       <div className="my-4 sm:my-0">
         <div>Contributions Overtime</div>
       </div>
-      <div className="my-4 sm:my-0 p-2 h-3/4 bg-zinc-100">{/* Graph */}</div>
+      <div className="my-4 sm:my-0 p-2 h-3/4 bg-zinc-100">
+        <Bars />
+      </div>
     </div>
   );
 };
