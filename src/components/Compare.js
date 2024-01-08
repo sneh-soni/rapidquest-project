@@ -3,7 +3,7 @@ import Charts from "./Charts";
 
 const Compare = () => {
   return (
-    <div className="relative -top-2 p-2">
+    <div className="relative -top-6 p-2 pb-0">
       <div className="font-bold text-lg sm:text-sm">
         How do I Compare to my Peers?
       </div>

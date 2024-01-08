@@ -5,7 +5,7 @@ import RecentTransactions from "./RecentTransactions";
 
 const Profile = () => {
   return (
-    <div className="absolute top-0 p-2 w-full h-screen sm:left-12 sm:w-[22.5%] sm:bg-zinc-100">
+    <div className="absolute max-h-screen sm:py-0 top-0 p-2 w-full h-screen sm:left-12 sm:w-[22.5%] sm:bg-zinc-100">
       <Name />
       <Balance />
       <RecentTransactions />

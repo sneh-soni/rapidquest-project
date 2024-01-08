@@ -14,7 +14,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="h-screen w-[5%]">
+    <div className="h-screen w-[5%] ">
       {isMobile ? (
         <div className="z-10 flex absolute w-screen h-8 mt-auto bottom-0 items-center p-2 justify-between bg-white">
           <div className="w-[10%] h-8 bg-blue-700 rounded-md flex justify-center items-center">
@@ -83,7 +83,7 @@ const Sidebar = () => {
           </div>
         </div>
       ) : (
-        <div className="w-12 z-10 p-2 h-full flex flex-col">
+        <div className="w-12 z-10 px-2 h-full flex flex-col">
           <div className="h-[20%] flex flex-col gap-2">
             <div className="flex justify-center h-8">
               <svg

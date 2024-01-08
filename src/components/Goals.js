@@ -2,7 +2,7 @@ import React from "react";
 
 const Goals = () => {
   return (
-    <div className="flex flex-wrap gap-2 p-2">
+    <div className="flex flex-wrap gap-2 p-2 pb-0">
       <div className="sm:w-full">
         <div className="text-blue-700">Retirement Income</div>
         <div className="text-xl font-semibold">Starting Year 2056</div>
