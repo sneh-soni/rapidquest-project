@@ -35,10 +35,10 @@ const RetirementStrategy = () => {
           <div className="w-1/4 flex justify-center items-center">5%</div>
         </div>
         <div className="hidden sm:block">
-          <button className="p-4 my-2 bg-blue-700 w-full rounded-lg text-white">
+          <button className="p-4 my-2 bg-blue-700 w-full rounded-lg text-white hover:bg-blue-800">
             Update
           </button>
-          <div className="flex justify-center text-sm text-blue-700">
+          <div className="flex justify-center text-sm text-blue-700 hover:cursor-pointer">
             View Help Docs{">"}
           </div>
         </div>

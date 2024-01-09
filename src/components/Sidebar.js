@@ -16,8 +16,8 @@ const Sidebar = () => {
   return (
     <div className="h-screen w-[5%] ">
       {isMobile ? (
-        <div className="z-10 flex absolute w-screen h-8 mt-auto bottom-0 items-center p-2 justify-between bg-white">
-          <div className="w-[10%] h-8 bg-blue-700 rounded-md flex justify-center items-center">
+        <div className="z-10 flex fixed w-screen h-8 mt-auto bottom-0 items-center p-2 justify-between bg-white">
+          <div className="w-[10%] h-8 focus:bg-blue-800 bg-blue-700 rounded-md flex justify-center items-center">
             <svg
               height="18"
               width="18"
@@ -31,7 +31,7 @@ const Sidebar = () => {
               ></path>
             </svg>
           </div>
-          <div className="w-[10%] h-8 flex justify-center items-center">
+          <div className="w-[10%] h-8 rounded-md focus:bg-zinc-100 flex justify-center items-center">
             <svg
               viewBox="0 0 576 512"
               height="24px"
@@ -41,7 +41,7 @@ const Sidebar = () => {
               <path d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z" />
             </svg>
           </div>
-          <div className="w-[10%] h-8 flex justify-center items-center">
+          <div className="w-[10%] h-8 rounded-md focus:bg-zinc-100 flex justify-center items-center">
             <svg
               height="24px"
               width="24px"
@@ -56,7 +56,7 @@ const Sidebar = () => {
               <rect height="1" width="10" x="2.5" y="9" />
             </svg>
           </div>
-          <div className="w-[10%] h-8 flex justify-center items-center">
+          <div className="w-[10%] h-8 rounded-md focus:bg-zinc-100 flex justify-center items-center">
             <svg
               viewBox="0 0 32 32"
               height="24px"
@@ -69,7 +69,7 @@ const Sidebar = () => {
               </g>
             </svg>
           </div>
-          <div className="w-[10%] h-8 flex justify-center items-center">
+          <div className="w-[10%] h-8 rounded-md focus:bg-zinc-100 flex justify-center items-center">
             <svg
               height="24px"
               id="Layer_1"
@@ -108,7 +108,7 @@ const Sidebar = () => {
                 </g>
               </svg>
             </div>
-            <div className="flex justify-center h-8">
+            <div className="flex justify-center hover:cursor-pointer hover:bg-zinc-100 items-center rounded-md h-8">
               <svg
                 class="feather feather-search"
                 fill="none"
@@ -126,8 +126,8 @@ const Sidebar = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col h-[60%] justify-start gap-6">
-            <div className="flex h-8 w-full bg-blue-700 rounded-md justify-center pt-[0.375rem]">
+          <div className="flex flex-col h-[60%] justify-start gap-2">
+            <div className="flex hover:cursor-pointer h-8 w-full hover:bg-blue-800 bg-blue-700 rounded-md justify-center pt-[0.375rem]">
               <svg
                 height="24"
                 width="24"
@@ -141,7 +141,7 @@ const Sidebar = () => {
                 ></path>
               </svg>
             </div>
-            <div className="flex justify-center">
+            <div className="flex hover:cursor-pointer h-8 hover:bg-zinc-100 items-center rounded-md justify-center">
               <svg
                 viewBox="0 0 576 512"
                 height="24px"
@@ -151,7 +151,7 @@ const Sidebar = () => {
                 <path d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z" />
               </svg>
             </div>
-            <div className="flex justify-center">
+            <div className="flex hover:cursor-pointer h-8 hover:bg-zinc-100 items-center rounded-md justify-center">
               <svg
                 height="24px"
                 width="24px"
@@ -166,7 +166,7 @@ const Sidebar = () => {
                 <rect height="1" width="10" x="2.5" y="9" />
               </svg>
             </div>
-            <div className="flex justify-center">
+            <div className="flex hover:cursor-pointer h-8 hover:bg-zinc-100 items-center rounded-md justify-center">
               <svg
                 viewBox="0 0 32 32"
                 height="24px"
@@ -181,7 +181,7 @@ const Sidebar = () => {
             </div>
           </div>
           <div className=" flex flex-col justify-end gap-4 h-[20%]">
-            <div className="h-8 flex justify-center items-center">
+            <div className="h-8 flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-zinc-100">
               <svg
                 fill="none"
                 height="24"
@@ -210,7 +210,7 @@ const Sidebar = () => {
                 />
               </svg>
             </div>
-            <div className="h-8 flex justify-center items-center">
+            <div className="h-8 flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-zinc-100">
               <svg
                 id="Layer_1"
                 version="1.1"

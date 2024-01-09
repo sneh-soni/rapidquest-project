@@ -38,6 +38,7 @@ export function Pie1() {
   return (
     <PieChart width={400} height={400}>
       <Pie
+        className="p-0"
         activeIndex={activeIndex1}
         activeShape={renderActiveShape}
         data={data1}
@@ -76,8 +77,10 @@ export function Pie3() {
   const [activeIndex3] = useState(0);
 
   return (
+    // <div style={{ width: "200px", height: "200px" }}>
     <PieChart width={400} height={400}>
       <Pie
+        // className="w-full h-full"
         activeIndex={activeIndex3}
         activeShape={renderActiveShape}
         data={data3}
@@ -89,5 +92,6 @@ export function Pie3() {
         dataKey="value"
       />
     </PieChart>
+    // </div>
   );
 }

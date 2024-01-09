@@ -36,7 +36,7 @@ const Balance = () => {
         </div>
       </div>
       <div className="w-full sm:h-10">
-        <button className=" text-white font-sans bg-blue-700 w-full rounded-lg p-4 flex justify-center sm:text-xs sm:gap-2 sm:w-3/4">
+        <button className="hover:bg-blue-800 text-white font-sans bg-blue-700 w-full rounded-lg p-4 flex justify-center sm:text-xs sm:gap-2 sm:w-3/4">
           I Want to{" "}
           {isMobile ? (
             "..."
