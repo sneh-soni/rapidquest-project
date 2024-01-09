@@ -18,7 +18,7 @@ const Balance = () => {
     <div className="bg-zinc-100 rounded-xl h-[45%] p-4 sm:pt-2 flex flex-col">
       <div className="font-semibold my-1">Today</div>
       <div>
-        <p className="text-4xl font-bold">$19,892</p>
+        <p className="text-4xl sm:text-3xl lg:text-4xl font-bold">$19,892</p>
         <p className="font-sans font-semibold text-zinc-500">Account Balance</p>
       </div>
       <div className="flex gap-2 py-4 sm:flex-col">
@@ -36,15 +36,16 @@ const Balance = () => {
         </div>
       </div>
       <div className="w-full sm:h-10">
-        <button className="hover:bg-blue-800 text-white font-sans bg-blue-700 w-full rounded-lg p-4 flex justify-center sm:text-xs sm:gap-2 sm:w-3/4">
+        <button className="hover:bg-blue-800 text-white font-sans bg-blue-700 w-full rounded-lg p-4 flex justify-center sm:text-xs sm:gap-2 lg:w-3/4">
           I Want to{" "}
           {isMobile ? (
             "..."
           ) : (
             <svg
+              className="mt-1"
               viewBox="0 0 48 48"
-              height="12"
-              width="12"
+              height="10"
+              width="10"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
