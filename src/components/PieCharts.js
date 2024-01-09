@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Sector } from "recharts";
+import React, { PureComponent } from "react";
+import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 import { data1, data2, data3 } from "../utils/PieData";
 
 const renderActiveShape = (props) => {
@@ -16,7 +16,7 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
+      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={"#000000"}>
         {payload.name}
       </text>
       <Sector
@@ -32,66 +32,84 @@ const renderActiveShape = (props) => {
   );
 };
 
-export function Pie1() {
-  const [activeIndex1] = useState(0);
+export default class PieCharts extends PureComponent {
+  state = {
+    activeIndex: 0,
+  };
 
-  return (
-    <PieChart width={400} height={400}>
-      <Pie
-        className="p-0"
-        activeIndex={activeIndex1}
-        activeShape={renderActiveShape}
-        data={data1}
-        cx={200}
-        cy={200}
-        innerRadius={30}
-        outerRadius={35}
-        fill="#8884d8"
-        dataKey="value"
-      />
-    </PieChart>
-  );
-}
+  onPieEnter = (_, index) => {
+    this.setState({
+      activeIndex: index,
+    });
+  };
 
-export function Pie2() {
-  const [activeIndex2] = useState(0);
-
-  return (
-    <PieChart width={400} height={400}>
-      <Pie
-        activeIndex={activeIndex2}
-        activeShape={renderActiveShape}
-        data={data2}
-        cx={200}
-        cy={200}
-        innerRadius={30}
-        outerRadius={35}
-        fill="#8884d8"
-        dataKey="value"
-      />
-    </PieChart>
-  );
-}
-
-export function Pie3() {
-  const [activeIndex3] = useState(0);
-
-  return (
-    // <div style={{ width: "200px", height: "200px" }}>
-    <PieChart width={400} height={400}>
-      <Pie
-        // className="w-full h-full"
-        activeIndex={activeIndex3}
-        activeShape={renderActiveShape}
-        data={data3}
-        cx={200}
-        cy={200}
-        innerRadius={30}
-        outerRadius={35}
-        fill="#8884d8"
-        dataKey="value"
-      />
-    </PieChart>
-    // </div>
-  );
+  render() {
+    return (
+      <>
+        <ResponsiveContainer width="33%" height="100%">
+          <PieChart width={400} height={400}>
+            <Pie
+              activeIndex={this.state.activeIndex}
+              activeShape={renderActiveShape}
+              data={data1}
+              cx="50%"
+              cy="50%"
+              innerRadius={35}
+              outerRadius={40}
+              dataKey="value"
+            >
+              {data1.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+          </PieChart>
+          <div className="flex justify-center sm:text-sm lg:text-base">
+            Average
+          </div>
+        </ResponsiveContainer>
+        <ResponsiveContainer width="33%" height="100%">
+          <PieChart width={400} height={400}>
+            <Pie
+              activeIndex={this.state.activeIndex}
+              activeShape={renderActiveShape}
+              data={data2}
+              cx="50%"
+              cy="50%"
+              innerRadius={35}
+              outerRadius={40}
+              // fill={colors}
+              dataKey="value"
+              // onMouseEnter={this.onPieEnter}
+            >
+              {data2.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+          </PieChart>
+          <div className="flex justify-center sm:text-sm lg:text-base">Top</div>
+        </ResponsiveContainer>
+        <ResponsiveContainer width="33%" height="100%">
+          <PieChart width={400} height={400}>
+            <Pie
+              activeIndex={this.state.activeIndex}
+              activeShape={renderActiveShape}
+              data={data3}
+              cx="50%"
+              cy="50%"
+              innerRadius={35}
+              outerRadius={40}
+              // fill={colors}
+              dataKey="value"
+              // onMouseEnter={this.onPieEnter}
+            >
+              {data3.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+          </PieChart>
+          <div className="flex justify-center sm:text-sm lg:text-base">Me</div>
+        </ResponsiveContainer>
+      </>
+    );
+  }
 }

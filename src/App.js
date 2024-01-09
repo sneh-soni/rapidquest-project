@@ -13,6 +13,11 @@ function App() {
       <Profile />
       <Details />
       <RetirementStretagy />
+      <div className="w-screen m-0 relative top-36 sm:hidden z-20">
+        <button className="bg-blue-700 w-full text-white rounded-xl p-2 flex justify-center items-center">
+          Update
+        </button>
+      </div>
     </div>
   );
 }

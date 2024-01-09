@@ -1,11 +1,11 @@
 import React from "react";
-import { Pie1, Pie2, Pie3 } from "./PieCharts";
+import PieCharts from "./PieCharts";
 
 const Charts = () => {
   return (
-    <div className="h-auto sm:w-3/5 sm:p-2">
-      <div className="bg-zinc-100 sm:h-full h-auto">
-        {Pie1()} {Pie2()} {Pie3()}
+    <div className="h-auto sm:w-3/5 sm:px-2 flex flex-col">
+      <div className="gap-2 h-20 flex">
+        <PieCharts />
       </div>
     </div>
   );
